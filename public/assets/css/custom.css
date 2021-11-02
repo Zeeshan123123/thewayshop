@@ -1,0 +1,59 @@
+/* The switch - the box around the slider */
+.custom-switch {
+    position: relative;
+    display: inline-block;
+    width: 44px;
+    height: 22px;
+    float:right;
+}
+
+/* Hide default HTML checkbox */
+.custom-switch input {display:none;}
+
+/* The slider */
+.custom-switch-toggle {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.custom-switch-toggle:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: -4px;
+    bottom: 2px;
+    background-color: black;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input.primary:checked + .custom-switch-toggle {
+    background-color: #2196F3;
+}
+
+input:focus + .custom-switch-toggle {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .custom-switch-toggle:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.custom-switch-toggle.round {
+    border-radius: 34px;
+}
+
+.custom-switch-toggle.round:before {
+    border-radius: 50%;
+}
+/** ADD YOUR AWESOME CODES HERE **/
