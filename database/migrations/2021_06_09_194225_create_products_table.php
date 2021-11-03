@@ -31,7 +31,7 @@ class CreateProductsTable extends Migration
             $table->string('unit')->nullable();
             $table->double('price', 8, 2)->nullable();
             $table->integer('hits')->nullable();
-            $table->integer('is_friday_mode')->default('no');
+            $table->string('is_friday_mode')->default('no');
             $table->enum('status',['active','inactive'])->default('active');
             $table->timestamps();
         });
