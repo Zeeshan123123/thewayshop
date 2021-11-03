@@ -3,7 +3,6 @@
 /public/storage
 /storage/*.key
 /vendor
-/storage
 /.idea
 /.phpintel
 .env
@@ -14,9 +13,6 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
-/public/css/app.css
-/public/js/app.js
-/public/mix-manifest.json
 .editorconfig
 .gitattributes
 .styleci.yml
@@ -25,4 +21,3 @@ README.md
 package-lock.json
 package.json
 phpunit.xml
-/public/assets/backend/vendor
